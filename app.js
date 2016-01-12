@@ -1,5 +1,5 @@
 var app = angular.module('weatherApp', []);
-
+app.constant("apiKey", "2de143494c0b295cca9337e1e96b00e0")
 app.controller('weatherController', function($scope,$http,$filter){
 	$scope.title = 'What\'s the Temperature';
 	$scope.isCity = false;
@@ -7,7 +7,7 @@ app.controller('weatherController', function($scope,$http,$filter){
 	$scope.getWeather = function(){
 		$http({
 			method: 'GET',
-			url: 'http://api.openweathermap.org/data/2.5/weather?q='+ $scope.city +'&appid=2de143494c0b295cca9337e1e96b00e0&units=metric'
+			url: 'http://api.openweathermap.org/data/2.5/weather?q='+ $scope.city +'&appid=' + apiKey + '&units=metric'
 		}).then(function successCallback(response) {
 			var data = response.data;
 			var temperature = data.main.temp;
