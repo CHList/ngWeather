@@ -1,0 +1,17 @@
+.content{
+	margin-top: 5%;
+}
+.footer {
+	bottom: 0;
+	position: absolute;
+}
+h1 span{
+	font-size:0.5em;
+	margin-top:0.35em;
+	position:absolute;
+}
+p span{
+	font-size:0.7em;
+	margin-top:0.4em;
+	position:absolute;
+}
