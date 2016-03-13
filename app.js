@@ -7,7 +7,7 @@ app.controller('weatherController', function($scope,$http,$filter, apiKey){
 	$scope.getWeather = function(){
 		$http({
 			method: 'GET',
-			url: 'http://api.openweathermap.org/data/2.5/weather?q='+ $scope.city +'&appid=' + apiKey + '&units=metric'
+			url: 'http://api.openweathermap.org/data/2.5/weather?q='+ $scope.city +'&APPID=' + apiKey + '&units=metric'
 		}).then(function successCallback(response) {
 			var data = response.data;
 			var temperature = data.main.temp;
