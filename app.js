@@ -1,5 +1,5 @@
 var app = angular.module('weatherApp', []);
-app.constant("apiKey", "ce08c2024330b7b0838f096c88a9e069")
+app.constant("apiKey", "7f2342d8cc343a7e87cd64b679e0bda4")
 app.controller('weatherController', function($scope,$http,$filter, apiKey){
 	$scope.title = 'What\'s the Temperature';
 	$scope.isCity = false;
